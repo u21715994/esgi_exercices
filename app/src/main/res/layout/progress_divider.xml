@@ -4,7 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="14dp">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_circle"
+        app:layout_constraintEnd_toStartOf="@+id/frise"
+        app:layout_constraintTop_toTopOf="@+id/frise"
+        />
     <View
+        android:id="@+id/frise"
         android:layout_width="0dp"
         android:layout_height="14dp"
         android:background="@drawable/bg_dashed_line"
@@ -13,5 +21,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_circle"
+        app:layout_constraintStart_toEndOf="@+id/frise"
+        app:layout_constraintTop_toTopOf="@+id/frise"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
